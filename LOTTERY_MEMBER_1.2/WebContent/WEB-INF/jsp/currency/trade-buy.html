@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html >
+<head> 
+    <title>买游戏币</title>
+    <meta charset="utf-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="css/public.css" rel="stylesheet">
+    <link href="css/button.css" rel="stylesheet">
+    <link href="css/sweetalert2.min.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script> 
+    <script type="text/javascript" src="js/sweetalert2.min.js"></script> 
+    <script type="text/javascript" src="js/main.js"></script> 
+</head>
+<!-- <i class="typcn typcn-chart-bar"></i> <button class="button button-primary">按钮</button>-->
+    <body>
+        <div class="header">
+            <div class="header-logo" >
+                <img src="./css/img/main-logo.png" class="logo" />
+            </div>
+            <div class="header-right-info">
+                <b class="info-t1">1 BTC = ￥4918.32</b>
+                <span id="browseBtn" class="line1">浏览<i class="typcn typcn-arrow-sorted-down"></i></span>
+                <span><i class="typcn typcn-clipboard"></i></span>
+                <span>注销</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-box">
+                <div class="left-nav">
+                    <dl>
+                        <dt><i class="typcn typcn-home-outline"></i><a href="index.html">主页</a></dt>
+                    </dl>
+                    <dl class="active">
+                        <dt><i class="typcn typcn-credit-3"></i>货币兑换</dt>
+                        <dd class="item-active"><a href="trade-buy.html" >LEP/USD</a></dd>
+                        <dd><a href="trade-records.html">交易记录</a></dd>
+                        <dd><a href="credit-records.html">信用记录</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="typcn typcn-credit-2"></i>业务管理</dt>
+                        <dd><a href="register.html">邀请好友</a></dd>
+                        <dd><a href="sales-record.html">好友列表</a></dd>
+                        
+                    </dl>
+                    <dl>
+                        <dt><i class="typcn typcn-credit-1"></i>钱庄管理</dt>
+                        <dd><a href="award.html">LQC交易</a></dd>
+                        <dd><a href="registration-code-transfer.html">兑换LQ</a></dd>
+                        <dd><a href="activatron-code-transfer.html">LQ管理</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="typcn typcn-lock-closed"></i>安全中心</dt>
+                        <dd><a href="person-info.html">首选项</a></dd>
+                        <dd><a href="change-passed.html">安全性</a></dd>
+                    </dl>
+                    <dl>
+                        <dt><i class="typcn typcn-phone-outline"></i>联系支持</dt>
+                    </dl>
+                </div>
+                <div class="zzs">
+                    <h1>赞助商链接</h1>
+                    <img src="./css/img/zzs.png" width="230px" />
+                </div>
+            </div>
+            <div class="right-box">
+                    <div class="right-main">
+                        <div class="index-header noborder">
+                            <p class="index-p1 left" >My Wallet <b>Be your own bank.®</b></p><p class="index-p1 right">0 BTC</p>
+                            <div class="clear" style='height:10px'></div>
+                            <p class="index-p1 left">
+                                <button class="button button-primary button-3d button-raised  button-longshadow button-small">发送</button>
+                                <button class="button  button-3d button-raised  button-longshadow button-small">接受</button>
+                            </p>
+                            <p class="index-p2 right">￥0.00</p>
+                            <div class="clear" style='height:10px'></div>
+                        </div>
+                    </div>
+                     <script type="text/javascript">
+                                $(function() {
+                                    $(".tradebuybtn").find("span").each(function(i) {
+                                        $(this).click(function() {
+                                            $(this).addClass("active").siblings().removeClass('active');
+                                            $(".qzdh").hide();
+                                            $(".qzdh"+i).show();
+
+                                        });
+                                    });
+                                })
+                                
+                            </script>
+                    <div class="table-header tradebuybtn">
+                        <span class='active'>钱老板兑换</span>
+                        <span>钱庄兑换</span>
+                    </div>
+
+                    <div class="right-main">
+                        <div class='qzdh qzdh0'>
+                        <h1 class='h2' style='width:43%;font-weight:normal'>钱老板兑换<!-- <a style='float:right;font-size:13px;position:relative;top:3px;'>更多</a> --></h2>
+                        <div class='buy-left'>
+                            <script type="text/javascript">
+                                $(function() {
+                                    $(".buy-left").find("table tr").each(function(i) {
+                                        $(this).click(function() {
+                                            $(this).addClass("active").siblings().removeClass('active');
+                                            // 其他操作
+
+                                        });
+                                    });
+                                })
+                                
+                            </script>
+                            <table class="table1">
+                                <tr>
+                                
+                                    <th>数量</th>
+                                    <th>价格</th>
+                                </tr>
+                                <tr>
+                                  
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                                <tr>
+                                   
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                                  <tr>
+                                  
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                                <tr>
+                                
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+
+                                <tr>
+                                
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                                <tr>
+                                   
+                                    <td>13</td>
+                                    <td>22.1022</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class='buy-right'>
+                           
+                            <div class='but-nav'>
+                               订单详情
+                            </div>
+                            <div>
+                                <div class="tipbox1 color1" style='border-left:none;text-align:center'>
+                                    汇率 ： 1LEP = 1$，1$ = 7￥
+                                </div>
+                                 <div class='butbox '>
+                                    <p>
+                                         <label>钱老板信誉:</label><b><img height='15px' src='./images/credit.png' /><img height='15px' src='./images/credit.png' /><img height='15px' src='./images/credit.png' /></b>
+                                         <label>兑换LEP数量:</label><b>20.00 CNY</b>
+
+                                     </p>
+                                    <p>
+                                        <label>实际付款金额:</label><b style='width:300px;'>20.00 RMB &nbsp;|&nbsp; 22.123 BTC &nbsp;|&nbsp; 30.20 USA</b>
+                                    </p>
+                                  
+                                     <p>
+                                        <label>银行名称:</label><b style='color:#666;font-size:13px;font-weight:normal'>花旗银行</b>
+                                    </p>
+                                    <p>
+                                        <label>交易密码:</label><b><input type="password" class="input"  /></b>
+                                    </p>
+                                    <p>
+                                        <label></label>
+                                        <b><button class="button button-primary">买入</button></b>
+                                    </p>
+                                </div>
+                             </div>
+
+                             <div class='clear'></div>
+                        
+                        </div>
+                    <div class='clear'></div>
+                </div>
+
+                <div class='qzdh qzdh1 hidden'>
+                    <script type="text/javascript">
+                        function ljdh() {
+                            $("#setp1").hide();
+                            $("#setp2").fadeIn(400);
+                        }
+                       
+                    </script>
+                    <div style='height:20px;'></div>
+                    <p class='title4'>请输入您要兑换的LEP数量和转款的BTC地址</p>
+                    <div class='qzdhbox'>
+                        <div id='setp1'>
+                            <div class='setp1left'>
+                                <p>
+                                    <label>LEP数量：</label><input class="input" />
+                                </p>  
+                                <p>
+                                    <label>转入BTC地址：</label><input class="input" />
+                                </p>  
+                                <p>
+                                   <button onclick='ljdh()' class="button button-primary">立即兑换</button>
+                                </p>    
+                             </div>
+                             <div class='setp1right'>
+                                    <h1 class='blue'>友情链接</h1>
+                                    <p><a href='#'>如何获取BTC地址？</a></p>
+                                    <p><a href='#'>如何购买BTC（BTC币）？</a></p>
+                                    <div style='height:30px'></div>
+                                    <h1 class='red'>兑换汇率</h1>
+                                    <p class='red'>1LEP = 1$ 1BTC = 456$</p>
+                                    <p class='red'>1LEP = 6.5￥ 1BTC = 4564￥</p>
+
+                             </div>
+                             <div style='height:0px;clear:both'></div>
+                        </div>
+                        <div id='setp2' class='hidden'>
+                            <div class='setp2box'>
+                                <p><b>钱庄BTC地址：<strong >SDJKKSDWIK7SSF67</strong></b><span>复制</span></p>
+                                <p><b>兑换LEP数量：<strong>20</strong></b><span>复制</span></p>
+                                <p><b>转入BTC金额：<strong>10000 RMB</strong></b><span>复制</span></p>
+                            </div>
+                            <div style='height:50px;'></div>
+                            <button onclick='ljdh()' class="button button-primary">完成</button>
+                            <p class='red'><i class="typcn typcn-info-outline" ></i>重要提示，请确认已经向钱庄BTC地址转入后点击完成</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                    <div class="table-header">
+                        <h1 class='nav-h1'>我的订单（<a class='active' href='javascript:;'>买</a>／<a href='javascript:;'>卖</a>）<i class="typcn typcn-info-outline" onclick='alerts("买游戏币规则", "当前交易订单状态为已打款等待卖家确认时，还可进行4笔买入<br />当点击买入后必须1小时内完成付款，超时交易取消<br />买家当日被系统或者自己本人取消2次，当日即没有购买资格,同时买家的信用降级，当日也看不到卖单<br />","error")'></i></h1>
+                        <div class="table-header-box1">
+                           更多
+                        </div>
+                    </div>
+
+                    <div class="right-main">
+                        <script type="text/javascript">
+                                $(function() {
+                                    $(".nav2-right").find("span").each(function(i) {
+                                        $(this).click(function() {
+                                            $(this).addClass("active").siblings().removeClass('active');
+                                            $(".right-main .righttable").hide();
+                                            $(".right-main .righttable"+i).show();
+
+                                        });
+                                    });
+                                    $(".nav-h1").find("a").each(function(i) {
+                                        $(this).click(function() {
+                                            $(this).addClass("active").siblings().removeClass('active');
+                                            $(".right-main .navh11").hide();
+                                            $(".right-main .navh"+i).show();
+
+                                        });
+                                    });
+                                })
+                                
+                            </script>
+                            <div class="navh11 navh0">
+                             
+                                     <div class='nav2-right'>
+                            <span class='active'>进行中<b>0</b></span>
+                            <span>最近成交</span>
+                            </div>
+                            <table class="table1 righttable righttable0">
+                                <tr>
+                                    <th>进行中</th>
+                                    <th>出售数量</th>
+                                    <th>交易时间</th>
+                                    <th>交易状态</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="norecords">暂无记录！</td>
+                                </tr>
+                            </table>
+                            <table class="table1 hidden righttable righttable1">
+                                <tr>
+                                    <th>最近成交</th>
+                                    <th>出售数量</th>
+                                    <th>交易时间</th>
+                                    <th>交易状态</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="norecords">暂无记录！</td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div class=" hidden navh11 navh1">
+                               
+                                     <div class='nav2-right'>
+                                        <span class='active'>进行中<b>0</b></span>
+                                        <span>最近成交</span>
+                                    </div>
+                                    <table class="table1 righttable righttable0">
+                                        <tr>
+                                            <th>进行中</th>
+                                            <th>出售数量</th>
+                                            <th>交易时间</th>
+                                            <th>交易状态</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="norecords">暂无记录！</td>
+                                        </tr>
+                                    </table>
+                                    <table class="table1 hidden righttable righttable1">
+                                        <tr>
+                                            <th>最近成交</th>
+                                            <th>出售数量</th>
+                                            <th>交易时间</th>
+                                            <th>交易状态</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="4" class="norecords">暂无记录！</td>
+                                        </tr>
+                                    </table>
+                            </div>
+                       
+                    </div>
+
+                </div>
+           
+        </div>
+        <!-- 隐藏区 -->
+        <div id="browseBox" class="browseBox" > 
+            <h1>Notification</h1>
+            <ul>
+                <li>New user registered</li>
+                <li>New setting</li>
+                <li>Updates</li>
+                <li>Other</li>
+            </ul>
+        </div>  
+    </body>
+</html>
+
